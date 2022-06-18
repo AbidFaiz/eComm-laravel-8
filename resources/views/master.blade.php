@@ -20,6 +20,39 @@
         .page-footer {
             background: #324191;
         }
+
+        img.slider-img {
+            width: 100%;
+            height: 600px !important;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            background-color: #324191;
+        }
+
+        .trending-img {
+            width: 80%;
+            height: 100px;
+
+        }
+
+        .trending-item {
+            float: left;
+            width: 20%;
+        }
+
+        .trending-wrapper {
+            margin: 20px;
+        }
+
+        .detail-img {
+            width: 80%;
+        }
+
+        .searched-item {
+            margin-bottom: 50px;
+        }
     </style>
 </head>
 

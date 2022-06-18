@@ -15,7 +15,7 @@ class ProductSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('products')->insert(
+        DB::table('products')->insert([
             [
                 "name" => "Lg Mobile",
                 "price" => "15000",
@@ -51,6 +51,6 @@ class ProductSeeder extends Seeder
                 "category" => "TV",
                 "gallery" => "https://image.shutterstock.com/image-photo/poznan-pol-feb-04-2020-600w-1923161831.jpg"
             ]
-        );
+        ]);
     }
 }
