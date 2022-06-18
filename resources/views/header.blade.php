@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Session;
 
 $total = 0;
 if (Session::has('user')) {
-    // $total = ProductController::cartItem();
+    $total = ProductController::cartItem();
 }
 ?>
 
@@ -33,7 +33,7 @@ if (Session::has('user')) {
             </form>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item"><a class="nav-link" href="#">CartItem({{$total}})</a></li>
+            <li class="nav-item"><a class="nav-link" href="/cartlist">CartItem({{$total}})</a></li>
             @if(Session::has('user'))
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
